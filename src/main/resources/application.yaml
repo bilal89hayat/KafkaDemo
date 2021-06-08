@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          type: kafka
+          defaultCandidate: false
+          brokers: localhost:9093
+      bindings:
+        us-east-1-out:
+          destination: greetings-us-east
+          contentType: application/json
+
+
